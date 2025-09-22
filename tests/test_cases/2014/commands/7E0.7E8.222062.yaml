@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.222062
+test_cases:
+- expected_values:
+    VOLKSWAGEN_APP_POS2: 0.381
+  response: 7E805622062017D
+- expected_values:
+    VOLKSWAGEN_APP_POS2: 0.601
+  response: '7E8056220620259'
