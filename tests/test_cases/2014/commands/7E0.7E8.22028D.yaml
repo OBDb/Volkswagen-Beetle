@@ -1,0 +1,32 @@
+command_id: 7E0.7E8.22028D
+test_cases:
+- expected_values:
+    VOLKSWAGEN_ECU_TEMP: 47
+  response: 7E80562028D01D6
+- expected_values:
+    VOLKSWAGEN_ECU_TEMP: 48
+  response: 7E80562028D01E0
+- expected_values:
+    VOLKSWAGEN_ECU_TEMP: 49
+  response: 7E80562028D01EA
+- expected_values:
+    VOLKSWAGEN_ECU_TEMP: 50
+  response: 7E80562028D01F4
+- expected_values:
+    VOLKSWAGEN_ECU_TEMP: 51
+  response: 7E80562028D01FE
+- expected_values:
+    VOLKSWAGEN_ECU_TEMP: 52
+  response: 7E80562028D0208
+- expected_values:
+    VOLKSWAGEN_ECU_TEMP: 53
+  response: 7E80562028D0212
+- expected_values:
+    VOLKSWAGEN_ECU_TEMP: 54
+  response: 7E80562028D021C
+- expected_values:
+    VOLKSWAGEN_ECU_TEMP: 55
+  response: 7E80562028D0226
+- expected_values:
+    VOLKSWAGEN_ECU_TEMP: 56
+  response: 7E80562028D0230
