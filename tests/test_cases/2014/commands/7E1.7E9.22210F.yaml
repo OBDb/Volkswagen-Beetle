@@ -1,12 +1,11 @@
 command_id: 7E1.7E9.22210F
 test_cases:
 - expected_values:
-    VOLKSWAGEN_GEAR: '4'
+    BEETLE_GEAR: '4'
   response: '7E9 04 62 21 0F 04 '
 - expected_values:
-    VOLKSWAGEN_GEAR: '2'
-    VOLKSWAGEN_GEAR_SHFT: PARK
+    BEETLE_GEAR: '2'
   response: 7E90462210F02
 - expected_values:
-    VOLKSWAGEN_GEAR: '4'
+    BEETLE_GEAR: '4'
   response: 7E90462210F04
