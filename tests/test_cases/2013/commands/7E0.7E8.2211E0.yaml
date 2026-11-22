@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211E0
+test_cases:
+- expected_values:
+    BEETLE_CMD_CRANK_TQ: 32.3
+  response: 7E8056211E00143
+- expected_values:
+    BEETLE_CMD_CRANK_TQ: 39.1
+  response: 7E8056211E00187

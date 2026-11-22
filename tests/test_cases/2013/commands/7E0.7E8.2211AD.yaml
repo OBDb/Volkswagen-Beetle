@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211AD
+test_cases:
+- expected_values:
+    BEETLE_MAF_CMD: 54.2
+  response: 7E8056211AD021E
+- expected_values:
+    BEETLE_MAF_CMD: 202.2
+  response: 7E8056211AD07E6

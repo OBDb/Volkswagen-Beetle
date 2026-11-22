@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211CE
+test_cases:
+- expected_values:
+    BEETLE_LOW_FUEL_P_CMD: 236.9
+  response: 7E8056211CE0941
+- expected_values:
+    BEETLE_LOW_FUEL_P_CMD: 246.9
+  response: 7E8056211CE09A5

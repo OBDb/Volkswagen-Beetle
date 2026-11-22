@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211AC
+test_cases:
+- expected_values:
+    BEETLE_MAF_THROUGH_THROTTLE: 11.8
+  response: 7E8056211AC0076
+- expected_values:
+    BEETLE_MAF_THROUGH_THROTTLE: 36.3
+  response: 7E8056211AC016B

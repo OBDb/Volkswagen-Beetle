@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.221150
+test_cases:
+- expected_values:
+    BEETLE_MISFIRES_C3: 16551
+  response: 7E80562115040A7

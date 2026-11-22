@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22128C
+test_cases:
+- expected_values:
+    BEETLE_AVG_INJ_TIME: 0.2184
+  response: 7E80762128C00000222
+- expected_values:
+    BEETLE_AVG_INJ_TIME: 1.658
+  response: 7E80762128C00001031

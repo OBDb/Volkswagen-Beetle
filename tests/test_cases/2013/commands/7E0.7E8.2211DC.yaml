@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211DC
+test_cases:
+- expected_values:
+    BEETLE_MAP_RAW: 248.82812
+  response: 7E8056211DC0C71
+- expected_values:
+    BEETLE_MAP_RAW: 456.01562
+  response: 7E8056211DC16CD

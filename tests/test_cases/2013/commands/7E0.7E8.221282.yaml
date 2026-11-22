@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221282
+test_cases:
+- expected_values:
+    BEETLE_EXHAUST_GAS_T_BEFORE_CATALYST: 445.89
+  response: 7E8056212827CF7
+- expected_values:
+    BEETLE_EXHAUST_GAS_T_BEFORE_CATALYST: 478.45
+  response: '7E8056212828353'

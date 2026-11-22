@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22128A
+test_cases:
+- expected_values:
+    BEETLE_FUEL_T: 59.25
+  response: 7E80462128A8F
+- expected_values:
+    BEETLE_FUEL_T: 61.5
+  response: 7E80462128A92

@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2210EC
+test_cases:
+- expected_values:
+    BEETLE_VLV_TIM_DIFF_ACT_SET: -0.34375
+  response: 7E8056210ECFFEA
+- expected_values:
+    BEETLE_VLV_TIM_DIFF_ACT_SET: -0.29688
+  response: 7E8056210ECFFED

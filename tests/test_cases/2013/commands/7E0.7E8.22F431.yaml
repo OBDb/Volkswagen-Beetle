@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22F431
+test_cases:
+- expected_values:
+    BEETLE_CLR_DIST: 117
+  response: 7E80562F4310075
+- expected_values:
+    BEETLE_CLR_DIST: 122
+  response: 7E80562F431007A

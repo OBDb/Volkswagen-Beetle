@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221341
+test_cases:
+- expected_values:
+    BEETLE_PQ35_CAMS_END: -579.2
+  response: 7E805621341F4B0
+- expected_values:
+    BEETLE_PQ35_CAMS_END: -536.4
+  response: 7E805621341F586

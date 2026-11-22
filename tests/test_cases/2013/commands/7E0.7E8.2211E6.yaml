@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211E6
+test_cases:
+- expected_values:
+    BEETLE_MQB_DPF_EXH_VOL: 35.9
+  response: 7E8056211E60167
+- expected_values:
+    BEETLE_MQB_DPF_EXH_VOL: 45.7
+  response: 7E8056211E601C9
