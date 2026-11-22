@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.22107D
+test_cases:
+- expected_values:
+    BEETLE_TQ_LIM: 299.9
+  response: 7E80562107D0BB7

@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211D7
+test_cases:
+- expected_values:
+    BEETLE_HIGH_FUEL_P_CMD: 7.5365
+  response: 7E8056211D73AE1
+- expected_values:
+    BEETLE_HIGH_FUEL_P_CMD: 7.837
+  response: 7E8056211D73D3A

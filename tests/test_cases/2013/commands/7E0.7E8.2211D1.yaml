@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211D1
+test_cases:
+- expected_values:
+    BEETLE_BRAKE_BOOSTER_RAW_P: 6109
+  response: 7E8056211D117DD
+- expected_values:
+    BEETLE_BRAKE_BOOSTER_RAW_P: 6134
+  response: 7E8056211D117F6

@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211F0
+test_cases:
+- expected_values:
+    BEETLE_BOOST_P_ACT: 100.59375
+  response: 7E8056211F0324C
+- expected_values:
+    BEETLE_BOOST_P_ACT: 101.14062
+  response: 7E8056211F03292

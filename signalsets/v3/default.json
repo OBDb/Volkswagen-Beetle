@@ -67,7 +67,7 @@
   "signals": [
     {"id": "BEETLE_IAT_7E0", "path": "Engine", "fmt": { "len": 8, "max": 143, "min": -48, "mul": 3, "div": 4, "add": -48, "unit": "celsius" }, "name": "Intake air temperature", "suggestedMetric": "intakeAirTemperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1002"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1002"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_AC_COMP_T", "path": "Climate", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "A/C compressor torque, requested"}
   ]},
@@ -83,11 +83,11 @@
   "signals": [
     {"id": "BEETLE_PQ35_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 127, "min": -128, "sign": true, "unit": "scalar" }, "name": "Current gear"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "1010"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "1010"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_ENGINE_TORQUE", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Engine torque"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "1017"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "1017"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_A_C_REFRIGERANT_PRES", "path": "Engine", "fmt": { "len": 16, "max": 65534, "min": -65536, "mul": 2, "sign": true, "unit": "unknown" }, "name": "A/C refrigerant pressure"}
   ]},
@@ -95,7 +95,7 @@
   "signals": [
     {"id": "BEETLE_CLT_FAN_REQ_AC", "path": "Engine", "fmt": { "len": 16, "max": 100, "min": -399.9989, "mul": 12207, "div": 1000000, "sign": true, "unit": "percent" }, "name": "Coolant fan, requested by A/C"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "101A"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "101A"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_A_C_COMPRESSOR_TORQUE", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "A/C compressor torque"}
   ]},
@@ -103,7 +103,7 @@
   "signals": [
     {"id": "BEETLE_GENERATOR_TORQUE_REQUEST", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Generator torque request"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "101C"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "101C"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_GENERATOR_LOAD_SIG", "path": "Engine", "fmt": { "len": 16, "max": 100, "div": 100, "sign": true, "unit": "percent" }, "name": "Generator load signal"}
   ]},
@@ -115,11 +115,11 @@
   "signals": [
     {"id": "BEETLE_MQB_AIR_MASS_1", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "mul": 1000, "div": 10000, "sign": true, "unit": "unknown" }, "name": "Air mass meter 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1026"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1026"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MQB_MAF_1_B1_RAW", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "mul": 1000, "div": 10000, "sign": true, "unit": "unknown" }, "name": "Mass airflow sensor 1 bank 1 raw value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1028"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1028"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_DOWNSHIFT_ADAPT_V", "path": "Control", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "millivolts" }, "name": "Downshift point adaptation voltage"}
   ]},
@@ -127,11 +127,11 @@
   "signals": [
     {"id": "BEETLE_APP_REDUCE_V", "path": "Control", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "millivolts" }, "name": "Accelerator pedal release detection threshold voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "102A"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "102A"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_ACCEL_PEDAL_SENS_1_V", "path": "Battery", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "millivolts" }, "name": "Accelerator pedal, sensor 1 voltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "102B"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "102B"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_ACCEL_PEDAL_SENS_2_V", "path": "Battery", "fmt": { "len": 16, "max": 13107, "div": 5, "unit": "millivolts" }, "name": "Accelerator pedal, sensor 2 voltage"}
   ]},
@@ -171,11 +171,11 @@
   "signals": [
     {"id": "BEETLE_PQ35_CHG_P", "path": "Battery", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "bars" }, "name": "Boost pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1059"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1059"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_ACCEL_PEDAL_TQ_LIM", "path": "Movement", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Accelerator pedal torque limit"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "105A"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "105A"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_BATTERY_V", "path": "Battery", "fmt": { "len": 16, "max": 655340, "min": -655360, "mul": 20, "sign": true, "unit": "millivolts" }, "name": "Battery voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
@@ -203,7 +203,7 @@
   "signals": [
     {"id": "BEETLE_PQ35_LIM_TRQ", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Torque limit"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "107D"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "107D"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_TQ_LIM", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "newtonMeters" }, "name": "Torque limitation"}
   ]},
@@ -223,7 +223,7 @@
   "signals": [
     {"id": "BEETLE_CAM_ADPT_INT_PHASE", "path": "Engine", "fmt": { "len": 16, "max": 719, "min": -720, "mul": 35999, "div": 1638350, "sign": true, "unit": "degrees" }, "name": "Camshaft adaptation intake, phase position"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "1097"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "1097"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_GENERATOR_PERFORMANCE", "path": "Engine", "fmt": { "len": 16, "max": 308822.421, "min": -308831.8464, "mul": 94248, "div": 10000, "sign": true, "unit": "watts" }, "name": "Generator performance"}
   ]},
@@ -267,7 +267,7 @@
   "signals": [
     {"id": "BEETLE_INJ_SPD_INJ_3", "path": "Movement", "fmt": { "len": 16, "max": 16383.75, "div": 4, "unit": "rpm" }, "name": "Injection speed injector 3"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10BE"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10BE"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_REQ_TQ_AMOUNT", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Requested torque, amount for auxiliary units"}
   ]},
@@ -291,7 +291,7 @@
   "signals": [
     {"id": "BEETLE_LAMBDA_ACT", "path": "Engine", "fmt": { "len": 16, "max": 7.9997, "min": -7.9999, "mul": 12207, "div": 50000000, "sign": true, "unit": "scalar" }, "name": "Lambda, actual value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10D8"}, "freq": 3600,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10D8"}, "freq": 3600, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_PQ35_INJ_4_RAIL_P_2", "path": "Engine", "fmt": { "len": 16, "max": 1.63, "min": -1.6384, "div": 20000, "sign": true, "unit": "milliseconds" }, "name": "Injector 4 rail pressure calibration point 2"}
   ]},
@@ -331,15 +331,15 @@
   "signals": [
     {"id": "BEETLE_MAX_FILLING_CORR", "path": "Engine", "fmt": { "len": 16, "max": 1.96, "mul": 3, "div": 100000, "unit": "scalar" }, "name": "Maximum filling correction factor from knock control"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10EA"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10EA"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_OPEN_CAM_SHFT_ANG", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Open cam shaft angle at quantity control valve"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10EB"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10EB"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_CRANK_ROT_ANG", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Crankshaft rotation angle when closing the quantity control valve"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "10EC"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10EC"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_VLV_TIM_DIFF_ACT_SET", "path": "Engine", "fmt": { "len": 16, "max": 511.9843, "min": -512, "div": 64, "sign": true, "unit": "degrees" }, "name": "Valve timing, the difference between the, actual and the set angle"}
   ]},
@@ -459,11 +459,11 @@
   "signals": [
     {"id": "BEETLE_AAT_7E0_2", "path": "Engine", "fmt": { "len": 16, "max": 6280, "min": -273, "div": 10, "add": -273.1, "unit": "celsius" }, "name": "Ambient temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "1124"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "1124"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_CAMSHAFT_VSS", "path": "Movement", "fmt": { "len": 16, "max": 16383.75, "mul": 2500, "div": 10000, "unit": "rpm" }, "name": "Camshaft speed"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1125"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1125"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_CAM_ADPT_INT_BANK_1", "path": "Engine", "fmt": { "len": 16, "max": 655.34, "min": -655.36, "div": 50, "sign": true, "unit": "degrees" }, "name": "Camshaft adaptation, intake bank 1, phase position"}
   ]},
@@ -507,7 +507,7 @@
   "signals": [
     {"id": "BEETLE_SEG_AD_MMV_ER_3", "path": "Engine", "fmt": { "len": 16, "max": 7.8123, "min": -7.8125, "mul": 78123, "div": 327670000, "sign": true, "unit": "percent" }, "name": "SEG_AD_MMV_ER, 3"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "1130"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "1130"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_COOLANT_FAN_1_ACTIVATION", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 10000, "sign": true, "unit": "percent" }, "name": "Coolant fan 1, activation"}
   ]},
@@ -527,11 +527,11 @@
   "signals": [
     {"id": "BEETLE_SEG_AD_MMV_ER_MID_2", "path": "Engine", "fmt": { "len": 16, "max": 7.8123, "min": -7.8125, "mul": 78123, "div": 327670000, "sign": true, "unit": "percent" }, "name": "SEG_AD_MMV_ER_MID, 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1135"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1135"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_COOLANT_T", "path": "Engine", "fmt": { "len": 16, "max": 6280.4, "min": -273.1, "div": 10, "add": -273.1, "unit": "celsius" }, "name": "Coolant temperature at radiator outlet"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1136"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1136"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_HEIGHT_CORR", "path": "Engine", "fmt": { "len": 16, "max": 3.9999, "mul": 0.0000610348, "unit": "scalar" }, "name": "Height correction"}
   ]},
@@ -543,11 +543,11 @@
   "signals": [
     {"id": "BEETLE_SEG_AD_MMV_ER_H_0", "path": "Engine", "fmt": { "len": 16, "max": 7.8123, "min": -7.8125, "mul": 78123, "div": 327670000, "sign": true, "unit": "percent" }, "name": "SEG_AD_MMV_ER_H, 0"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1139"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1139"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MEAN_INJ_QUANTITY", "path": "Engine", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "unknown" }, "name": "Mean injection quantity"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "113A"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "113A"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_SEG_AD_MMV_ER_H_2", "path": "Engine", "fmt": { "len": 16, "max": 7.8123, "min": -7.8125, "mul": 78123, "div": 327670000, "sign": true, "unit": "percent" }, "name": "SEG_AD_MMV_ER_H, 2"}
   ]},
@@ -567,23 +567,23 @@
   "signals": [
     {"id": "BEETLE_SEG_AD_MMV_ER_L_3", "path": "Engine", "fmt": { "len": 16, "max": 7.8123, "min": -7.8125, "mul": 78123, "div": 327670000, "sign": true, "unit": "percent" }, "name": "SEG_AD_MMV_ER_L, 3"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1146"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1146"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MISFIRES_TOTAL", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires total"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1147"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1147"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MISFIRES_1000REV_C1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires / 1000 revolutions, cylinder 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1148"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1148"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MISFIRES_1000REV_C3", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires / 1000 revolutions, cylinder 3"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1149"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1149"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MISFIRES_1000REV_C4", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires / 1000 revolutions, cylinder 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "114A"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "114A"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MISFIRES_1000REV_C2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires / 1000 revolutions, cylinder 2"}
   ]},
@@ -591,19 +591,19 @@
   "signals": [
     {"id": "BEETLE_MIS_PER_1000_REVOLUTIONS_4_7E0", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires per 1000 revolutions 4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "114F"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "114F"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MISFIRES_C1", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1150"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1150"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MISFIRES_C3", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires, cylinder 3"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "115C"}, "freq": 30,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "115C"}, "freq": 30, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_PQ35_SRV_REGEN_STAT", "path": "Engine.DPF", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Service regeneration status"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "1161"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "1161"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_ENGINE_RPM_AT_IDLE_REQUIRED", "path": "Movement", "fmt": { "len": 16, "max": 16383.5, "min": -16384, "div": 2, "sign": true, "unit": "rpm" }, "name": "Engine RPM at idle required"}
   ]},
@@ -683,11 +683,11 @@
   "signals": [
     {"id": "BEETLE_INLET_FLAPS_REQ", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 20, "div": 13107, "unit": "percent" }, "name": "Inlet flaps - requested value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11A3"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11A3"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_EA888B_BOOST_P_CMD", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Ea888b boost pressure regulator, commanded"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11A4"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11A4"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_FUEL_PMP_CMD_DUTY", "path": "Fuel", "fmt": { "len": 16, "max": 99.998, "mul": 0.0015258743, "unit": "percent" }, "name": "Fuel pump, commanded duty"}
   ]},
@@ -703,11 +703,11 @@
   "signals": [
     {"id": "BEETLE_INT_MODEL_AIR_MASS", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "Intake model air mass flow filtered value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11AC"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11AC"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MAF_THROUGH_THROTTLE", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "Mass air flow through throttle"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11AD"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11AD"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MAF_CMD", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "Mass air flow, commanded"}
   ]},
@@ -719,7 +719,7 @@
   "signals": [
     {"id": "BEETLE_ECT_RADIATOR_OUTLET", "path": "Engine", "fmt": { "len": 16, "max": 6280, "min": -273, "div": 10, "add": -273.1, "unit": "celsius" }, "name": "Coolant temperature at radiator outlet"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11B8"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11B8"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_AIR_LEAKAGE", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "unknown" }, "name": "Air leakage"}
   ]},
@@ -743,7 +743,7 @@
   "signals": [
     {"id": "BEETLE_FUEL_PMP_ADPT", "path": "Fuel", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "kilopascal" }, "name": "Fuel pump adaptation"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11CC"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11CC"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_BOOST_REGULATOR_FEEDBACK", "path": "Engine", "fmt": { "len": 16, "max": 100, "div": 100, "sign": true, "unit": "percent" }, "name": "Boost regulator feedback"}
   ]},
@@ -751,11 +751,11 @@
   "signals": [
     {"id": "BEETLE_TCO_1_SYS", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "TCO_1_SYS"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11CE"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11CE"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_LOW_FUEL_P_CMD", "path": "Fuel", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "kilopascal" }, "name": "Low fuel pressure, commanded"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11CF"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11CF"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_BRAKE_BOOSTER_P", "path": "Control", "fmt": { "len": 16, "max": 2559, "mul": 19531, "div": 500000, "unit": "unknown" }, "name": "Brake booster pressure"}
   ]},
@@ -763,11 +763,11 @@
   "signals": [
     {"id": "BEETLE_TCO_1_ST", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "TCO_1_ST"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11D1"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11D1"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_BRAKE_BOOSTER_RAW_P", "path": "Control", "fmt": { "len": 16, "max": 65535, "unit": "unknown" }, "name": "Brake booster raw pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11D2"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11D2"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_HIGH_P_CTRL_ADPT", "path": "Engine", "fmt": { "len": 16, "max": 16.3835, "min": -16.384, "div": 2000, "sign": true, "unit": "unknown" }, "name": "High pressure control, adaptation"}
   ]},
@@ -775,11 +775,11 @@
   "signals": [
     {"id": "BEETLE_TURBOCHARGER_INLET_P", "path": "Battery", "fmt": { "len": 16, "max": 5119.9218, "mul": 5, "div": 64, "unit": "unknown" }, "name": "Turbocharger inlet pressure corrected value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11D5"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11D5"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_HIGH_FUEL_P", "path": "Fuel", "fmt": { "len": 16, "max": 16.3835, "min": -16.384, "div": 2000, "sign": true, "unit": "unknown" }, "name": "High fuel pressure, regulation error"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11D7"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11D7"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_HIGH_FUEL_P_CMD", "path": "Fuel", "fmt": { "len": 16, "max": 32.7675, "div": 2000, "unit": "unknown" }, "name": "High fuel pressure, commanded"}
   ]},
@@ -787,11 +787,11 @@
   "signals": [
     {"id": "BEETLE_INT_MANIFOLD_P", "path": "Engine", "fmt": { "len": 16, "max": 5119.9218, "mul": 5, "div": 64, "unit": "unknown" }, "name": "Intake manifold pressure, corrected"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11DC"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11DC"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MAP_RAW", "path": "Engine", "fmt": { "len": 16, "max": 5119.9218, "mul": 5, "div": 64, "unit": "unknown" }, "name": "Manifold absolute pressure, raw value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11DD"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11DD"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_INT_MANIFOLD_P_CMD", "path": "Engine", "fmt": { "len": 16, "max": 5119.9218, "mul": 5, "div": 64, "unit": "unknown" }, "name": "Intake manifold pressure, commanded"}
   ]},
@@ -799,11 +799,11 @@
   "signals": [
     {"id": "BEETLE_POWERTRAIN_OVERALL", "path": "Transmission", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "scalar" }, "name": "Powertrain overall gear ratio"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11E0"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11E0"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_CMD_CRANK_TQ", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Commanded crankshaft torque"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11E6"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11E6"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MQB_DPF_EXH_VOL", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "mul": 1000, "div": 10000, "sign": true, "unit": "scalar" }, "name": "Diesel particulate filter exhaust gas flow volume"}
   ]},
@@ -815,7 +815,7 @@
   "signals": [
     {"id": "BEETLE_P_BEFORE_THROTTLE", "path": "Engine", "fmt": { "len": 16, "max": 2559.96, "mul": 21333, "div": 546125, "unit": "unknown" }, "name": "Pressure before throttle valve - sensor measured"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "11F0"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "11F0"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_BOOST_P_ACT", "path": "Engine", "fmt": { "len": 16, "max": 511, "div": 128, "unit": "kilopascal" }, "name": "Boost pressure, actual", "suggestedMetric": "absoluteBoostPressure"}
   ]},
@@ -867,11 +867,11 @@
   "signals": [
     {"id": "BEETLE_PQ35_ENVD_CAM_IN_1", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Environment data camshaft input 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1216"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1216"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_REL_LOAD", "path": "Engine", "fmt": { "len": 16, "max": 1536.1605, "mul": 0.0234403081, "unit": "scalar" }, "name": "Relative load value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1219"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1219"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_BOOST_REGULATION_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 0.0234384354, "unit": "percent" }, "name": "Boost regulation duty, commanded value"}
   ]},
@@ -883,7 +883,7 @@
   "signals": [
     {"id": "BEETLE_POST_INJ_2_7E0", "path": "Engine", "fmt": { "len": 16, "max": 13.1, "min": -13.1, "div": 2500, "sign": true, "unit": "milliseconds" }, "name": "Post-injection 2, activation duration"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "121C"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "121C"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_AIR_FILLING", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 11719, "div": 500000, "unit": "percent" }, "name": "Air filling"}
   ]},
@@ -895,23 +895,23 @@
   "signals": [
     {"id": "BEETLE_HIGH_FUEL_P_CONTROL_DEVIATION", "path": "Fuel", "fmt": { "len": 16, "max": 3276700, "min": -3276800, "mul": 100, "sign": true, "unit": "unknown" }, "name": "High fuel pressure control deviation"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1221"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1221"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_PQ35_ACCEL_PED_1", "path": "Movement", "fmt": { "len": 16, "max": 6553.4, "min": -6553.6, "div": 5, "sign": true, "unit": "millivolts" }, "name": "Accelerator pedal sensor 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1222"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1222"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_TQ_LOSS_ADPT_AC_COMP", "path": "Transmission", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Torque loss adaptation, A/C compressor + gear engaged"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1223"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1223"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_TQ_LOSS_ADPT_AC_COMP_7E0", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Torque loss adaptation, A/C compressor"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1224"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1224"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_TQ_LOSS_ADPT_GEAR", "path": "Transmission", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Torque loss adaptation, gear engaged"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1225"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1225"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_TQ_LOSS_ADPT_IDLE", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Torque loss adaptation at idle"}
   ]},
@@ -931,23 +931,23 @@
   "signals": [
     {"id": "BEETLE_VARIABLE_VLV_TIM_INT_1", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 0.0030517549, "unit": "percent" }, "name": "Variable valve timing, intake, bank 1, regulation"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "127D"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "127D"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_VARIABLE_VLV_TIM_INT_1_ON", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 0.0030517549, "unit": "percent" }, "name": "Variable valve timing, intake, bank 1, switch on"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1282"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1282"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_EXHAUST_GAS_T_BEFORE_CATALYST", "path": "Engine", "fmt": { "len": 16, "max": 1116.77, "min": -193.93, "div": 50, "add": -193.93, "unit": "celsius" }, "name": "Exhaust gas temperature before catalyst"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "128A"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "128A"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_FUEL_T", "path": "Fuel", "fmt": { "len": 8, "max": 143.25, "min": -48, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Fuel temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "128C"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "128C"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_AVG_INJ_TIME", "path": "Engine", "fmt": { "len": 32, "max": 1717986, "div": 2500, "unit": "milliseconds" }, "name": "Avg. injection time"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "1290"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "1290"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_OXYGEN_SNS_1_BANK_1_CERAMIC_T", "path": "Engine", "fmt": { "len": 16, "max": 1262.793, "min": -273.15, "mul": 234.37, "div": 10000, "add": -273.15, "unit": "celsius" }, "name": "Oxygen sensor 1 bank 1 ceramic temperature"}
   ]},
@@ -963,7 +963,7 @@
   "signals": [
     {"id": "BEETLE_CAT_T_BANK_2", "path": "Engine", "fmt": { "len": 16, "max": 3822, "min": -273, "div": 16, "add": -273.15, "unit": "celsius" }, "name": "Cat. temperature, bank 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "12B0"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "12B0"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_ACCELERATION_29BIT", "path": "Movement", "fmt": { "len": 16, "max": 32.767, "min": -32.768, "mul": 10, "div": 10000, "sign": true, "unit": "metersPerSecondSquared" }, "name": "Acceleration"}
   ]},
@@ -999,19 +999,19 @@
   "signals": [
     {"id": "BEETLE_HIGH_P_EGR_ACTUATOR", "path": "Engine", "fmt": { "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "percent" }, "name": "High pressure EGR actuator, activation"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "133B"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "133B"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_PQ35_CAMS_SPD", "path": "Movement", "fmt": { "len": 16, "max": 9830.1, "min": -9830.4, "mul": 0.3, "sign": true, "unit": "rpm" }, "name": "Camshaft speed"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "133F"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "133F"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_TQ_REDUCTION_REQ_ESP", "path": "Engine", "fmt": { "len": 32, "max": 214748364, "min": -214748364, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Torque reduction request from ESP"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1340"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1340"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_TQ_INCREASE_REQ_ESP", "path": "Engine", "fmt": { "len": 32, "max": 214748364, "min": -214748364, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Torque increase request from ESP"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1341"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1341"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_PQ35_CAMS_END", "path": "Engine", "fmt": { "len": 16, "max": 6553.4, "min": -6553.6, "div": 5, "sign": true, "unit": "degrees" }, "name": "Camshaft end position"}
   ]},
@@ -1027,7 +1027,7 @@
   "signals": [
     {"id": "BEETLE_CAM_ADJ_EXH_BANK_2_ACT", "path": "Engine", "fmt": { "len": 16, "max": 511, "min": -512, "div": 64, "sign": true, "unit": "degrees" }, "name": "Camshaft adjustment, exhaust bank 2, actual value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "136E"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "136E"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_CAM_ADJ_INT_BANK_1_ACT", "path": "Engine", "fmt": { "len": 16, "max": 262.136, "min": -262.144, "div": 125, "sign": true, "unit": "degrees" }, "name": "Camshaft adjustment, intake bank 1, actual value"}
   ]},
@@ -1039,7 +1039,7 @@
   "signals": [
     {"id": "BEETLE_CAM_ADJ_EXH_BANK_2_SPEC", "path": "Engine", "fmt": { "len": 16, "max": 262, "min": -262, "div": 125, "sign": true, "unit": "degrees" }, "name": "Camshaft adjustment, exhaust bank 2, specified value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1373"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1373"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_CAM_ADJ_INT_BANK_1_SPEC", "path": "Engine", "fmt": { "len": 16, "max": 262.136, "min": -262.144, "div": 125, "sign": true, "unit": "degrees" }, "name": "Camshaft adjustment, intake bank 1, specified value"}
   ]},
@@ -1047,7 +1047,7 @@
   "signals": [
     {"id": "BEETLE_PQ35_IGN_ANG_CYL", "path": "Battery", "fmt": { "len": 8, "max": 60, "min": -35.625, "mul": 0.375, "add": -35.625, "unit": "newtonMeters" }, "name": "Ignition angle current cylinder"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1385"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1385"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_CAM_POS_DEV_BASE_POS", "path": "Engine", "fmt": { "len": 16, "max": 719.9892, "min": -720.0112, "mul": 0.021973, "sign": true, "unit": "degrees" }, "name": "Camshaft position, deviation from the base position"}
   ]},
@@ -1151,7 +1151,7 @@
   "signals": [
     {"id": "BEETLE_IGA_CYL_KNK_1", "path": "Engine", "fmt": { "len": 8, "max": 47.625, "min": -48, "mul": 3, "div": 8, "add": -48, "unit": "degrees" }, "name": "IGA_CYL_KNK, 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "13F4"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "13F4"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_IGA_CYL_KNK_2", "path": "Engine", "fmt": { "len": 8, "max": 47.625, "min": -48, "mul": 3, "div": 8, "add": -48, "unit": "degrees" }, "name": "IGA_CYL_KNK, 2"}
   ]},
@@ -1219,7 +1219,7 @@
   "signals": [
     {"id": "BEETLE_MOTOR_TQ", "path": "Engine", "fmt": { "len": 16, "max": 10922.333, "min": -10922.666, "div": 3, "sign": true, "unit": "newtonMeters" }, "name": "Drive motor torque"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "dbg": true, "cmd": {"22": "1480"}, "freq": 3600,
+{ "hdr": "7E0", "rax": "7E8", "fcm1": true, "cmd": {"22": "1480"}, "freq": 3600, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_MIS_CNT_3", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfires counter:, cylinder 3"}
   ]},
@@ -1259,7 +1259,7 @@
   "signals": [
     {"id": "BEETLE_CTR_MIS_DC_MMV_CYL_2", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "CTR_MIS_DC_MMV_CYL_SAE, 2"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1490"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1490"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_BRAKE_BOOSTER_LOW_P_ACT", "path": "Control", "fmt": { "len": 16, "max": 2559.9937, "mul": 39063, "div": 1000000, "unit": "unknown" }, "name": "Brake booster low pressure, actual"}
   ]},
@@ -1267,11 +1267,11 @@
   "signals": [
     {"id": "BEETLE_INTAKE_AIR_T_IN_INTAKE_MANIFOLD", "path": "Engine", "fmt": { "len": 8, "max": 143.25, "min": -48, "mul": 0.75, "add": -48, "unit": "celsius" }, "name": "Intake air temperature in intake manifold", "suggestedMetric": "intakeAirTemperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "14A1"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14A1"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_RATED_DRIVE_TQ", "path": "Engine", "fmt": { "len": 32, "max": 214748364, "min": -214748364, "div": 10, "sign": true, "unit": "newtonMeters" }, "name": "Rated drive torque"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "14B4"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14B4"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_FUEL_LEVEL_INPUT_V1", "path": "Fuel", "fmt": { "len": 16, "max": 655.35, "div": 100, "unit": "liters" }, "name": "Fuel level input, v1", "suggestedMetric": "fuelTankLevel"}
   ]},
@@ -1283,7 +1283,7 @@
   "signals": [
     {"id": "BEETLE_PQ35_PRE_INJ_2_START", "path": "Engine", "fmt": { "len": 16, "max": 655.34, "min": -655.36, "div": 50, "sign": true, "unit": "degrees" }, "name": "Pre-injection 2 start"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "14CB"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14CB"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_GEAR_V2", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear", "suggestedMetric": "gear"}
   ]},
@@ -1303,7 +1303,7 @@
   "signals": [
     {"id": "BEETLE_PQ35_PRE_INJ_1_DURATION", "path": "Engine", "fmt": { "len": 16, "max": 13.1068, "min": -13.1072, "mul": 0.4, "div": 1000, "sign": true, "unit": "milliseconds" }, "name": "Pre-injection 1 duration"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "14D1"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "14D1"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_PQ35_PRE_INJ_2_DURATION", "path": "Engine", "fmt": { "len": 16, "max": 13.1068, "min": -13.1072, "mul": 0.4, "div": 1000, "sign": true, "unit": "milliseconds" }, "name": "Pre-injection 2 duration"}
   ]},
@@ -1327,7 +1327,7 @@
   "signals": [
     {"id": "BEETLE_ENG_OIL_LEVEL_7E0", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "millimeters" }, "name": "Engine oil level"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "1507"}, "freq": 3600,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "1507"}, "freq": 3600, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_CAT_CONVERTER_OXYGEN_STORAGE_CAPACITY_MEASURED", "path": "Engine", "fmt": { "len": 16, "max": 6553.5, "mul": 1000, "div": 10000, "unit": "unknown" }, "name": "Cat. converter oxygen storage capacity measured"}
   ]},
@@ -1395,7 +1395,7 @@
   "signals": [
     {"id": "BEETLE_IAT_RAW", "path": "Engine", "fmt": { "len": 16, "max": 6280.4, "min": -273.1, "div": 10, "add": -273.1, "unit": "celsius" }, "name": "Intake air temperature raw value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "15C1"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "15C1"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_IAT_BEFORE_THROTTLE", "path": "Engine", "fmt": { "len": 8, "max": 143.25, "min": -48, "mul": 3, "div": 4, "add": -48, "unit": "celsius" }, "name": "Intake air temperature before throttle valve, raw value"}
   ]},
@@ -1415,7 +1415,7 @@
   "signals": [
     {"id": "BEETLE_RESULT_CRANKCASE_VENTILATION_TEST", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Result of crankcase ventilation test, fail"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "15CD"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "15CD"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_ECT_RADIATOR_OUTLET_V_1", "path": "Engine", "fmt": { "len": 16, "max": 3003.6, "min": -3549.9, "div": 10, "add": -273.1, "sign": true, "unit": "celsius" }, "name": "Coolant temperature at radiator outlet v.1"}
   ]},
@@ -1427,7 +1427,7 @@
   "signals": [
     {"id": "BEETLE_YAW_ACCEL_RAW", "path": "Movement", "fmt": { "len": 16, "max": 32.767, "min": -32.768, "div": 1000, "sign": true, "unit": "metersPerSecondSquared" }, "name": "Yaw acceleration, raw value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "dbg": true, "cmd": {"22": "15D1"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "pri": "17", "fcm1": true, "cmd": {"22": "15D1"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_VEHICLE_LATERAL_ACCELERATION_RAW_VALUE", "path": "Movement", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "mul": 100, "div": 10000, "sign": true, "unit": "gravity" }, "name": "Vehicle lateral acceleration, raw value"}
   ]},
@@ -2941,27 +2941,27 @@
   "signals": [
     {"id": "BEETLE_ENG_OIL_LEVEL", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 100, "min": -327.68, "div": 100, "sign": true, "unit": "percent" }, "name": "Engine oil level current value"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F406"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F406"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_SHORT_TERM_FUEL_TRIM_1", "path": "Fuel", "fmt": { "len": 8, "max": 99.2187, "min": -100, "mul": 25, "div": 32, "add": -100, "unit": "percent" }, "name": "Short term fuel trim bank 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F407"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F407"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_LONG_TERM_FUEL_TRIM_1", "path": "Fuel", "fmt": { "len": 8, "max": 99.2187, "min": -100, "mul": 25, "div": 32, "add": -100, "unit": "percent" }, "name": "Long term fuel trim bank 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F40C"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F40C"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_RPM", "path": "Movement", "fmt": { "len": 16, "max": 7000, "div": 4, "unit": "rpm" }, "name": "Engine RPM"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F40D"}, "freq": 0.25, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F40D"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2015 },
   "signals": [
     {"id": "BEETLE_VSS", "path": "Movement", "fmt": { "len": 8, "max": 255, "nullmax": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed."}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F41F"}, "freq": 1, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F41F"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2015 },
   "signals": [
     {"id": "BEETLE_RUNTM", "path": "Clocks", "fmt": { "len": 16, "max": 65535, "unit": "seconds" }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F421"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F421"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2015 },
   "signals": [
     {"id": "BEETLE_MIL_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled while mil was activated"}
   ]},
@@ -2969,35 +2969,35 @@
   "signals": [
     {"id": "BEETLE_FLI_INPUT", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Fuel level input %", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F430"}, "freq": 3600, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F430"}, "freq": 3600, "dbgfilter": { "to": 2012, "from": 2015 },
   "signals": [
     {"id": "BEETLE_WARM_UPS", "path": "DTCs", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Number of warm-ups since diagnostic trouble codes cleared"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F431"}, "freq": 5, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F431"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2015 },
   "signals": [
     {"id": "BEETLE_CLR_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance traveled since diagnostic trouble codes cleared", "suggestedMetric": "distanceSinceDTCsCleared"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F433"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F433"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_BARO", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Barometric pressure", "suggestedMetric": "barometricPressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F43C"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F43C"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_EXH_GAS_T", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Exhaust gas temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F442"}, "freq": 0.25, "dbgfilter": { "to": 2013, "from": 2015 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F442"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2015 },
   "signals": [
     {"id": "BEETLE_VPWR", "path": "Battery", "fmt": { "len": 16, "max": 65, "div": 1000, "unit": "volts" }, "name": "Control module voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F446"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F446"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_AAT_7E0_7E0", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F449"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F449"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_ACCEL_PEDAL_POS_1", "path": "Movement", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Accelerator pedal position 1"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "F44A"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "F44A"}, "freq": 0.25, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "BEETLE_ACCEL_PEDAL_POS_2", "path": "Movement", "fmt": { "len": 8, "max": 100, "mul": 20, "div": 51, "unit": "percent" }, "name": "Accelerator pedal position 2"}
   ]},

@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221216
+test_cases:
+- expected_values:
+    BEETLE_REL_LOAD: 13.99386
+  response: '7E8056212160255'
+- expected_values:
+    BEETLE_REL_LOAD: 28.57374
+  response: 7E80562121604C3

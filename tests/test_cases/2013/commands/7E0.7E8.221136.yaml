@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221136
+test_cases:
+- expected_values:
+    BEETLE_HEIGHT_CORR: 0.98333
+  response: 7E8056211363EEF
+- expected_values:
+    BEETLE_HEIGHT_CORR: 0.99059
+  response: 7E8056211363F66

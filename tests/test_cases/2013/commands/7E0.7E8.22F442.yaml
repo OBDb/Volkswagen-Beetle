@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22F442
+test_cases:
+- expected_values:
+    BEETLE_VPWR: 13.876
+  response: 7E80562F4423634
+- expected_values:
+    BEETLE_VPWR: 13.947
+  response: 7E80562F442367B

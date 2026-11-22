@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.22136E
+test_cases:
+- expected_values:
+    BEETLE_CAM_ADJ_INT_BANK_1_ACT: -21.12
+  response: 7E80562136EF5B0
+- expected_values:
+    BEETLE_CAM_ADJ_INT_BANK_1_ACT: -8.024
+  response: 7E80562136EFC15

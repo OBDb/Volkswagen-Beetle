@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2210BE
+test_cases:
+- expected_values:
+    BEETLE_REQ_TQ_AMOUNT: 1.6
+  response: 7E8056210BE0010
+- expected_values:
+    BEETLE_REQ_TQ_AMOUNT: 1.8
+  response: 7E8056210BE0012

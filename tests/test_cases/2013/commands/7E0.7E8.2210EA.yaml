@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2210EA
+test_cases:
+- expected_values:
+    BEETLE_OPEN_CAM_SHFT_ANG: 38
+  response: 7E8056210EA017C
+- expected_values:
+    BEETLE_OPEN_CAM_SHFT_ANG: 39.9
+  response: 7E8056210EA018F

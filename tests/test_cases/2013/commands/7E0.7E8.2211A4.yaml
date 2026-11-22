@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211A4
+test_cases:
+- expected_values:
+    BEETLE_FUEL_PMP_CMD_DUTY: 37.73945
+  response: 7E8056211A4609D
+- expected_values:
+    BEETLE_FUEL_PMP_CMD_DUTY: 40.39447
+  response: 7E8056211A46769

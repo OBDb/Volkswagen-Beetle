@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.2211DD
+test_cases:
+- expected_values:
+    BEETLE_INT_MANIFOLD_P_CMD: 253.28125
+  response: 7E8056211DD0CAA
+- expected_values:
+    BEETLE_INT_MANIFOLD_P_CMD: 392.96875
+  response: 7E8056211DD13A6
