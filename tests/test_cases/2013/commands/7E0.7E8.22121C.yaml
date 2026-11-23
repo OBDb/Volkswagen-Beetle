@@ -1,6 +1,9 @@
 command_id: 7E0.7E8.22121C
 test_cases:
 - expected_values:
+    BEETLE_AIR_FILLING: 30.23502
+  response: 7E80562121C050A
+- expected_values:
     BEETLE_AIR_FILLING: 39.42272
   response: 7E80562121C0692
 - expected_values:

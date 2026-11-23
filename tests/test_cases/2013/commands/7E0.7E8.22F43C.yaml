@@ -1,6 +1,9 @@
 command_id: 7E0.7E8.22F43C
 test_cases:
 - expected_values:
+    BEETLE_EXH_GAS_T: 367.3
+  response: 7E80562F43C0FE9
+- expected_values:
     BEETLE_EXH_GAS_T: 543.6
   response: 7E80562F43C16CC
 - expected_values:

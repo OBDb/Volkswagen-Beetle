@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     BEETLE_MISFIRES_C1: 58370
   response: 7E80562114FE402
+- expected_values:
+    BEETLE_MISFIRES_C1: 58392
+  response: 7E80562114FE418

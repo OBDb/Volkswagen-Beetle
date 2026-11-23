@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     BEETLE_MISFIRES_TOTAL: 0
   response: '7E8056211460000'
+- expected_values:
+    BEETLE_MISFIRES_TOTAL: 34
+  response: '7E8056211460022'

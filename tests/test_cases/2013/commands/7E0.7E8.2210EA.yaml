@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     BEETLE_OPEN_CAM_SHFT_ANG: 39.9
   response: 7E8056210EA018F
+- expected_values:
+    BEETLE_OPEN_CAM_SHFT_ANG: 47.4
+  response: 7E8056210EA01DA
