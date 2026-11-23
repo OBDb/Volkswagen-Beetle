@@ -1,6 +1,9 @@
 command_id: 7E0.7E8.22127D
 test_cases:
 - expected_values:
+    BEETLE_VARIABLE_VLV_TIM_INT_1_ON: 64.12958
+  response: 7E80562127D5216
+- expected_values:
     BEETLE_VARIABLE_VLV_TIM_INT_1_ON: 66.70221
   response: 7E80562127D5561
 - expected_values:

@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     BEETLE_VLV_TIM_DIFF_ACT_SET: -0.29688
   response: 7E8056210ECFFED
+- expected_values:
+    BEETLE_VLV_TIM_DIFF_ACT_SET: -0.25
+  response: 7E8056210ECFFF0

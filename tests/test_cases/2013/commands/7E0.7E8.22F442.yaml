@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     BEETLE_VPWR: 13.947
   response: 7E80562F442367B
+- expected_values:
+    BEETLE_VPWR: 14.347
+  response: 7E80562F442380B

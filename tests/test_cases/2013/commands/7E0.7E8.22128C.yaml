@@ -4,5 +4,8 @@ test_cases:
     BEETLE_AVG_INJ_TIME: 0.2184
   response: 7E80762128C00000222
 - expected_values:
+    BEETLE_AVG_INJ_TIME: 0.6348
+  response: 7E80762128C00000633
+- expected_values:
     BEETLE_AVG_INJ_TIME: 1.658
   response: 7E80762128C00001031
